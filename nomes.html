@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomes</title>
+</head>
+
+<body>
+    <center>
+        <h1>Digite o nome</h1>
+        <input id="f"><button onclick="grupo()">vai aparecer aqui</button>
+        <script>
+            var g = document.querySelector("#f")
+            function grupo() {
+                letra = g.value[0]
+                switch (letra) {
+                    case "a":
+                        console.log("1");
+                        break;
+                    case "m":
+                        console.log("2");
+                        break;
+                    default: 
+                    alert ("Inicial do nome não encontrada")
+                }
+
+            }
+
+        </script>
+    </center>
+
+</body>
+
+</html>

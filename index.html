@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numero</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <h1>DADOS DO ALUNO</h1>
+    <input id="n1" min="1" step="1" placeholder="Digite seu nome" /><br><br>
+    <input id="n2" min="1" step="1" placeholder="Digite sua idade"/><br><br>
+    <input id="n3" min="1" step="1" placeholder="Digite seu endereço"/><br><br>
+
+    <button onclick="aparecer()">Aparecer</button>
+    <br> <br>
+    <h4 id="t1" hidden="true">
+        Este é o <span id="s1"></span> que tem <span id="s2"></span> 
+        anos, que mora em <span id="s3"></span>
+
+    </h4>
+
+    <!--com # é id-->
+    <!-- sem # é so o elemento-->
+    <script>
+        var n1 = document.querySelector('#n1')
+        var resultado = document.querySelector('#s1')
+
+        var n2 = document.querySelector('#n2')
+        var resultado2 = document.querySelector('#s2')  
+
+        var n3 = document.querySelector('#n3')
+        var resultado3 = document.querySelector('#s3')
+
+
+        function aparecer() { 
+            resultado.innerHTML = n1.value
+            resultado2.innerHTML = n2.value
+            resultado3.innerHTML = n3.value
+            document.getElementById("t1").hidden=false
+         }        
+
+    </script>
+    
+        
+
+    
+
+</body>
+
+</html>

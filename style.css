@@ -1,0 +1,13 @@
+body{
+    background-color: rgb(128, 128, 128);
+}
+
+input{
+    background-color: darkgray;
+}
+
+button{
+    background-color: black;
+    color: white;
+    border-color: black;
+}

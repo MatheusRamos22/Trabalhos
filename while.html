@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+<title>
+    Títilo da Página Olá!
+</title>
+</head>
+<body ><center>
+       <h1>Exemplos</h1></br>
+       
+
+O seguinte laço while itera enquanto n é menor que três.</br>
+
+var n = 0;</br>
+var x = 0;</br>
+</br>
+while (n < 3) {</br>
+  n++;</br>
+  x += n;</br>
+}</br>
+O valor de X será  <div id="exemplo"></div> 
+    </center>
+       <script>
+var n = 0;
+var x = 0;
+
+while (n < 3) {
+  console.log(n++);
+  console.log(x += n);
+}
+document.getElementById('exemplo').innerHTML = x;
+           
+        </script>
+</body>
+</html>

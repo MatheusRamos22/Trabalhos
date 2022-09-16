@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tradutor</title>
+</head>
+
+<body>
+    <h1>Escolha uma palavra para traduzir</h1>
+    <table>
+        <tr>
+            <td>
+                <ul>
+                    <li>Onibus</li>
+                    <li>Carro</li>
+                    <li>Avião</li>
+                    <li>Moto</li>
+                    <li>Trem</li>
+
+                </ul>
+            </td>
+
+            <td>
+                <ul>
+                    <li>Cachorro</li>
+                    <li>Gato</li>
+                    <li>Vaca</li>
+                    <li>Coelho</li>
+                    <li>Leão</li>
+                </ul>
+            </td>
+        </tr>
+    </table><br><br>
+    <input id="f" placeholder="Escolha a palavra pelo nome">
+    <button onclick="traduzir()">Traduzir</button>
+
+    <script>
+        var p = document.querySelector("#f")
+        function traduzir() {
+            switch (p.value) {
+                case "Onibus":
+                    console.log("Bus.");
+                    break;
+
+                case ("Carro"):
+                    console.log("Car.");
+                    break;
+
+                case ("Avião"):
+                    console.log("Plane.");
+                    break;
+
+                case ("Moto"):
+                    console.log("Motorcycle.");
+                    break;
+
+                case ("Trem"):
+                    console.log("train.");
+                    break;
+
+                case ("Cachorro"):
+                    console.log("Dog.");
+                    break;
+
+                case("Gato"):
+                console.log("Cat.");
+                break;
+
+                case("Vaca"):
+                console.log("Cow.");
+                break;
+
+                case ("Coelho"):
+                    console.log("Rabbit.");
+                    break;
+
+                    case("Leão"):
+                    console.log("Lion.");
+                    break;
+
+                    default:
+                        console.log("Animal não encontrado na lista.")                    
+            }
+        }
+    </script>
+
+</body>
+
+</html>

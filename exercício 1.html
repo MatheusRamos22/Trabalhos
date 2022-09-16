@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+</head>
+
+<body>
+    <h1>Diagrama do peso dos peixes</h1>
+    <input placeholder="Digite o peso em Kg" id="f">
+    <button onclick="kg()">Calcular</button>
+    <script>
+        var p = document.querySelector("#f")
+        function kg() {
+            if (p.value>50) {
+                var pagar = "taxa";
+            }
+            switch (pagar) {
+                case "taxa":
+            var e = parseInt(p.value) - 50;
+            console.log(e+ "Kg em excesso")
+            var m = e * 4
+            console.log ("Excedeu o peso e irá pagar uma multa de R$"+ m);
+            break;
+            default:;
+            console.log ("Zerado, não vai pagar multa")
+        }}
+
+    </script>
+
+</body>
+
+</html>

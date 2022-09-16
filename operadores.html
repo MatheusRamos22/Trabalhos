@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Lógicos</title>
+</head>
+
+<body>
+    <h1>Operadores Lógicos</h1>
+    <input id="f"><button onclick="aparecer()">Vai aparecer aqui</button>
+    <script>
+        var x = document.querySelector("#f")
+        function aparecer() {
+            if (x.value>10){
+                console.log("Verdadeiro")
+                var y = parseInt(x.value) *2
+                console.log("o dobro desse número é " + y)
+            }
+            
+            else {
+                console.log("Falso")
+                var t = parseInt(x.value) *3
+                console.log("o triplo desse número é " + t)
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+<title>
+    Títilo da Página Olá!
+</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body><center>
+    <h1>NOME DO ALUNO(a)</h1>
+       <input id="nome">
+       <h1>1° Trimestre</h1>
+       <input id="n1" type="number">
+       <h1>2° Trimestre</h1>
+       <input id="n2" type="number">
+       <h1>3° Trimestre</h1>
+       <input id="n3" type="number">
+       <h1>4° Trimestre</h1>
+       <input id="n4" type="number"><br><br>
+       <button onclick="aparecer()">CALCULAR MÉDIA</button><br><br>
+       <h1 id="t"hidden="true"><button id="bot"><h1>Situação</h1></button></h1>
+    </center>
+       <script>
+        var nome = document.querySelector('#nome')
+        var n1 = document.querySelector('#n1')
+        var n2 = document.querySelector('#n2')
+        var n3 = document.querySelector('#n3')
+        var n4 = document.querySelector('#n4')
+        var resultado = document.querySelector('#bot')
+  function 
+  aparecer(){
+      var media = (parseInt(n1.value) + parseInt(n2.value) + 
+      parseInt(n3.value) + parseInt(n4.value)) / 4
+    if(media<6){
+        resultado.innerHTML = nome.value+" Reprovado com Média " + parseInt(media)
+        document.getElementById("t").hidden=false
+
+    } else{
+          resultado.innerHTML =nome.value+" Aprovado com Mèdia " + parseInt(media)
+          document.getElementById("t").hidden=false
+    }console.log(media)
+    
+      
+    }       
+        </script>
+</body>
+</html>

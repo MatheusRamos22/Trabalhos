@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Equação do 1° grau</title>
+</head>
+
+<body>
+    <center>
+        <h1>EQUAÇÃO DO 1º GRAU</h1><br>
+        <h2>Calcule o "x" da equação:</h2>
+        <h2>X <select name="operador" id="op">                
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            A = B</h2><br>
+        <h2>Informe "A":</h2><br>
+        <input id="a" type="number"><br>
+        <h2>Informe "B":</h2><br>
+        <input id="b" type="number"><br><br>
+        <button onclick="equacao1grau()">CALCULAR</button>
+        <h1 id="res"></h1>
+
+    </center>
+    <script>
+        var a = document.querySelector('#a')
+        var b = document.querySelector('#b')
+        var op = document.querySelector("#op")
+        var resultado = document.querySelector('#res')
+
+        function equacao1grau() {
+            if (op.value == "+") {
+                var eq = b.value - a.value
+                resultado.innerHTML = "X = " +eq
+            }
+            else if (op.value == "-") {
+                var eq = parseInt(b.value) + parseint(a.value)
+                resultado.innerHTML = "X = " +eq
+            }
+            else if (op.value == "*") {
+                var eq = b.value / a.value
+                resultado.innerHTML = "X = " +eq
+            }
+            else if (op.value == "/") {
+                var eq = b.value * a.value
+                resultado.innerHTML = "X = " +eq
+            }
+            alert("X= " +eq)
+        }
+    </script>
+
+
+
+</body>
+
+</html>

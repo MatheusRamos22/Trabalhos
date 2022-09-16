@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><center>
+    <h1>Digite o número</h1>
+    <input id="f"><button onclick="escreva()">Aparecer</button>
+    <script>
+        var n = document.querySelector("#f")
+        function escreva(){
+            switch (n.value){
+            case "1":
+            console.log ("Matheus de Carvalho Ramos");
+            break;
+            case "2":
+                console.log ("Thiago de Carvalho Ramos");
+                break;
+            default:
+            console.log ("Não faz parte da lista");
+        }
+        }
+    </script>
+</center>
+    
+</body>
+</html>

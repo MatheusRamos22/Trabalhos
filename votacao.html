@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votação</title>
+</head>
+
+<body>
+    <h1>Votação</h1>
+    <ul>
+        <li>Lula - 1</li>
+        <li>Jair Bolsonaro - 2</li>
+        <li>Ciro Gomes - 3</li>
+    </ul>
+    <input placeholder="Insira número de candidatos" id="total"><br><br>
+       <label>Voto</label><input placeholder="Insira o número do candidato" id="voto" type="number" min="1" max="3">
+    <button type="button" onclick="contar(this)" id="b">Votar</button>
+    <script>
+        //    for ( var p=1; p < t; p++)
+        var voto = document.querySelector('#voto')
+        var total= document.querySelector('#total')
+            var contador = 0;
+            var contador2 = 0;
+            var contador3 = 0;
+            var contadorTotal = 0;
+        function contar(button) {                     
+            
+            if (voto.value == 1) {
+                contador = contador + 1;
+                contadorTotal = contadorTotal +1;
+                console.log("Candidato1 " + contador + "votos.");
+            }
+
+
+            else if (voto.value == 2) {
+                contador2 = contador2 + 1;
+                contadorTotal = contadorTotal +1;
+                console.log("Candidato2 " + contador2 + "votos.");
+            }
+
+
+            else if (voto.value == 3) {
+                contador3 = contador3 + 1;
+                contadorTotal = contadorTotal +1;
+                console.log("Candidato3 " + contador3 + "votos.");
+            }
+
+            if (contadorTotal >= total.value){
+                console.log("Todos os eleitores votaram.")
+                document.getElementById(button.id).disabled="true"
+            }
+        }        
+    </script>
+
+
+</body>
+
+</html>
